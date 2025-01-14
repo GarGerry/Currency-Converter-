@@ -19,5 +19,4 @@ A modern and user-friendly web application that allows users to convert currenci
   
 
 ## **Live Demo**  
-Check out the live version of the project:  
-[Currency Converter - GitHub Pages](https://<your-github-username>.github.io/currency-converter/)  
+Check out the live version of the project:  https://gargerry.github.io/Currency-Converter-/
