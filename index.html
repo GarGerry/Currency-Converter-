@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Tambahkan FontAwesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <form id="currencyForm">
+      <input type="number" id="amount" placeholder="Enter amount" required>
+      <div class="currency-selectors">
+        <select id="fromCurrency" required>
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="IDR">IDR - Indonesian Rupiah</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="BRL">BRL - Brazilian Real</option>
+          <option value="KRW">KRW - South Korean Won</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+        </select>
+        <span>to</span>
+        <select id="toCurrency" required>
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="IDR">IDR - Indonesian Rupiah</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="BRL">BRL - Brazilian Real</option>
+          <option value="KRW">KRW - South Korean Won</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+        </select>
+      </div>
+      <button type="submit">Convert</button>
+    </form>
+    <!-- Menambahkan tempat untuk ikon mata uang dan hasil konversi -->
+    <div id="result">
+      <i id="fromCurrencyIcon" class="fas"></i> <!-- Ikon untuk mata uang asal -->
+      <span id="conversionResult"></span> <!-- Hasil konversi -->
+      <i id="toCurrencyIcon" class="fas"></i> <!-- Ikon untuk mata uang tujuan -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

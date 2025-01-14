@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #F3F4F9, #C9D6E3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  position: relative;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  margin: 0 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2D3A3A;
+  font-weight: 600;
+}
+
+input, select {
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #E0E0E0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  appearance: none; /* Menghapus tampilan default dropdown */
+  -webkit-appearance: none; /* Untuk Safari */
+  -moz-appearance: none; /* Untuk Firefox */
+  background-color: #fff;
+  color: #555;
+}
+
+input:focus, select:focus {
+  border: 1px solid #4CAF50;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 180, 50, 0.2);
+}
+
+/* Gaya untuk elemen select agar lebih modern */
+select {
+  background-image: url('https://img.icons8.com/ios/452/down-squared.png'); /* Ikon dropdown */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 40px; /* Memberikan ruang untuk ikon di kanan */
+}
+
+/* Styling untuk selector mata uang */
+.currency-selectors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Watermark dengan Copyright */
+body::after {
+  content: "© 2025 Powered by Teggar";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input, select {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+
+/* Responsif untuk tampilan yang lebih besar (Tablet ke atas) */
+@media (min-width: 769px) {
+  .container {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  input, select {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+}
